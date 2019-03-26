@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ordinary"
+                style="@style/ItemRoundStyle"
+                android:text="普通Fragment" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="是否开启懒加载" />
+
+            <TextView
+                android:id="@+id/tv_lazy"
+                style="@style/ItemRoundStyle"
+                android:text="懒加载" />
+
+            <TextView
+                android:id="@+id/tv_list"
+                style="@style/ItemRoundStyle"
+                android:text="List封装" />
+
+            <TextView
+                android:id="@+id/tv_load_more"
+                style="@style/ItemRoundStyle"
+                android:text="LoadMore封装" />
+
+            <TextView
+                android:id="@+id/tv_load_more_view_pager"
+                style="@style/ItemRoundStyle"
+                android:text="LoadMore_ViewPager" />
+
+            <TextView
+                android:id="@+id/tv_loading_dialog"
+                style="@style/ItemRoundStyle"
+                android:text="loading_dialog" />
+
+            <CheckBox
+                android:id="@+id/cb_close_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="开启dialog可关闭" />
+
+            <CheckBox
+                android:id="@+id/cb_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="开启动画" />
+
+            <CheckBox
+                android:id="@+id/cb_myself_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="使用自定义动画" />
+
+            <TextView
+                android:id="@+id/tv_tax"
+                style="@style/ItemRoundStyle"
+                android:text="缴税dialog" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

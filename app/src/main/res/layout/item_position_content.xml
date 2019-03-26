@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_root_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll_top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="7.5dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_name_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:paddingTop="4dp"
+            android:text="永续-BTCUSD"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sell_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:text="多头  10X"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_name_des"
+            android:layout_alignParentRight="true"
+            android:text="收益率"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_income_rate_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_income"
+            android:layout_below="@id/tv_income"
+            android:layout_marginTop="10dp"
+            android:text="-0.54%"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_build_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_name_des"
+            android:layout_marginRight="63dp"
+            android:layout_toLeftOf="@id/tv_income"
+            android:text="开仓价格"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_build_value_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_build_value"
+            android:layout_below="@id/tv_build_value"
+            android:layout_marginTop="10dp"
+            android:text="$6500.00"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll_top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_income_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收益(BTC)"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_income_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_income_title"
+            android:layout_marginTop="2dp"
+            android:text="0.5494"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="可平仓量(USD)"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_sell_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_sell"
+            android:layout_below="@id/tv_sell"
+            android:layout_marginTop="6dp"
+            android:text="1.0"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27.5dp"
+            android:layout_toLeftOf="@id/tv_sell"
+            android:text="持仓量(USD)"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_position_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_position"
+            android:layout_below="@id/tv_position"
+            android:layout_marginTop="6dp"
+            android:text="1.0"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_force_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_sell_num"
+            android:layout_marginTop="20dp"
+            android:text="强平价格(USD)"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_force_sell_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_force_sell"
+            android:layout_marginTop="6dp"
+            android:text="3648.0"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_force_sell"
+            android:layout_marginRight="28dp"
+            android:layout_toLeftOf="@id/tv_force_sell"
+            android:text="保证金(BTC)"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_security_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_security"
+            android:layout_below="@id/tv_security"
+            android:layout_marginTop="6dp"
+            android:text="30"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_sell_btn"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_force_sell_num"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="平仓"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_setting_security_btn"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/tv_sell_btn"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/tv_sell_btn"
+            android:gravity="center"
+            android:text="调整保证金"
+            android:textColor="@color/colorPrimaryPress"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/jWidgetProgressColor" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ItemRoundStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_background_round</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="MyTaxDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/tax_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/tax_exit_anim</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Customize your theme here. -->
+    <style name="ZhikeAppTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+</resources>

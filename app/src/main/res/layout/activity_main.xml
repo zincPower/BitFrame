@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_fragment_demo"
+        style="@style/ItemRoundStyle"
+        android:text="前往Fragment的封装" />
+
+    <TextView
+        android:id="@+id/tv_toolbar"
+        style="@style/ItemRoundStyle"
+        android:text="前往带有toolbar的activity" />
+
+    <TextView
+        android:id="@+id/tv_web_view"
+        style="@style/ItemRoundStyle"
+        android:text="开启WebView" />
+
+</LinearLayout>
