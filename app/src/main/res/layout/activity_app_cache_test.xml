@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="SharePreferences 文件名" />
+
+    <EditText
+        android:id="@+id/et_key"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_file_name"
+        android:layout_toRightOf="@id/recycle_view"
+        android:hint="key"
+        android:text="username" />
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_key"
+        android:layout_toEndOf="@id/recycle_view"
+        android:hint="value"
+        android:text="zinc" />
+
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_value"
+        android:layout_toEndOf="@id/recycle_view"
+        android:hint="time"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        style="@style/ItemRoundStyle"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_time"
+        android:layout_toEndOf="@id/recycle_view"
+        android:text="存入" />
+
+    <TextView
+        android:id="@+id/tv_read"
+        style="@style/ItemRoundStyle"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_save"
+        android:layout_toEndOf="@id/recycle_view"
+        android:text="读取" />
+
+    <TextView
+        android:id="@+id/tv_remove"
+        style="@style/ItemRoundStyle"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_read"
+        android:layout_toEndOf="@id/recycle_view"
+        android:text="删除" />
+
+    <TextView
+        android:id="@+id/tv_clear"
+        style="@style/ItemRoundStyle"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_remove"
+        android:layout_toEndOf="@id/recycle_view"
+        android:text="清空" />
+
+</RelativeLayout>

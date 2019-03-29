@@ -5,13 +5,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".cache.CacheTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,6 +25,9 @@
         <activity android:name=".bit.activity.ToolbarDemoActivity" />
         <activity android:name=".bit.activity.FragmentMainActivity" />
         <activity android:name=".web.WebActivity" />
+
+        <activity android:name=".cache.TestAppCacheActivity" />
+        <activity android:name=".cache.TestBitActivity" />
 
     </application>
 

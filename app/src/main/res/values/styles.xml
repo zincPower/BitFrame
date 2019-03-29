@@ -29,9 +29,4 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
-    <!-- Customize your theme here. -->
-    <style name="ZhikeAppTheme" parent="AppTheme.NoActionBar">
-        <item name="android:windowBackground">@android:color/white</item>
-    </style>
-
 </resources>
