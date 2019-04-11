@@ -2,7 +2,7 @@ package com.bitframe;
 
 import android.app.Application;
 
-import com.bit.cache.AppBitBaseCache;
+import com.bit.cache.AppCache;
 
 /**
  * author       : zinc
@@ -15,7 +15,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        AppBitBaseCache.init(this);
+        AppCache.init(this);
     }
 
 }

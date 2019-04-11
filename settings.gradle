@@ -1,1 +1,1 @@
-include ':app', ':bit'
+include ':app', ':bit', ':bit_creator'

@@ -28,6 +28,7 @@
 
         <activity android:name=".cache.TestAppCacheActivity" />
         <activity android:name=".cache.TestBitActivity" />
+        <activity android:name=".cache.CacheModelActivity" />
 
     </application>
 

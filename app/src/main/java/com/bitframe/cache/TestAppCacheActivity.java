@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.bit.cache.AppBitBaseCache;
+import com.bit.cache.AppCache;
 import com.bit.view.activity.BitBaseActivity;
 import com.bitframe.R;
 
@@ -75,11 +75,11 @@ public class TestAppCacheActivity extends BitBaseActivity implements View.OnClic
             validTime = Long.parseLong(time);
         }
 
-        AppBitBaseCache cache;
+        AppCache cache;
         if (TextUtils.isEmpty(fileName)) {
-            cache = AppBitBaseCache.getInstance();
+            cache = AppCache.getInstance();
         } else {
-            cache = AppBitBaseCache.getInstance(fileName);
+            cache = AppCache.getInstance(fileName);
         }
 
         switch (v.getId()) {

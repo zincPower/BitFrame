@@ -6,17 +6,12 @@
 
     <TextView
         style="@style/ItemRoundStyle"
-        android:onClick="onBitCache"
-        android:text="进入 BitCache" />
+        android:onClick="onSave"
+        android:text="存入" />
 
     <TextView
         style="@style/ItemRoundStyle"
-        android:onClick="onAppCache"
-        android:text="进入 AppCache" />
-
-    <TextView
-        style="@style/ItemRoundStyle"
-        android:onClick="onModelCache"
-        android:text="进入 ModelCache" />
+        android:onClick="onRead"
+        android:text="读取" />
 
 </LinearLayout>

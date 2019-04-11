@@ -7,11 +7,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.bit.cache.AppBitBaseCache;
 import com.bit.cache.BitBaseCache;
 import com.bit.view.activity.BitBaseActivity;
 import com.bitframe.R;
-import com.zinc.jrecycleview.JRecycleView;
 
 /**
  * author       : zinc

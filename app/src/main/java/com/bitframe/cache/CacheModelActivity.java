@@ -1,10 +1,13 @@
 package com.bitframe.cache;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 
 import com.bit.view.activity.BitBaseActivity;
 import com.bitframe.R;
+
+import java.util.Random;
 
 /**
  * author       : zinc
@@ -12,11 +15,13 @@ import com.bitframe.R;
  * desc         :
  * version      :
  */
-public class CacheTestActivity extends BitBaseActivity {
+public class CacheModelActivity extends BitBaseActivity {
+
+    Random random = new Random();
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_cache_test;
+        return R.layout.activity_cache_model_test;
     }
 
     @Override
@@ -29,15 +34,13 @@ public class CacheTestActivity extends BitBaseActivity {
 
     }
 
-    public void onAppCache(View view) {
-        startActivity(new Intent(this, TestAppCacheActivity.class));
+    public void onSave(View view) {
+        UserCache.save(new User("zinc", random.nextInt(10_000)));
     }
 
-    public void onBitCache(View view) {
-        startActivity(new Intent(this, TestBitActivity.class));
-    }
+    public void onRead(View view) {
 
-    public void onModelCache(View view) {
-        startActivity(new Intent(this, CacheModelActivity.class));
+        Log.i(TAG, "onRead: " + UserCache.getDefault().toString());
+
     }
 }
